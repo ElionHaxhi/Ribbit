@@ -1,5 +1,5 @@
 Ribbit
 ======
 
-questa app la trovi in locase su /opt/llamp/htdoc/gitelionhaxhi
+questa app la trovi in locale su /opt/llamp/htdoc/gitelionhaxhi
 
