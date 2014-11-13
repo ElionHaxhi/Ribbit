@@ -1,4 +1,4 @@
-package com.elionhaxhi.ribbit;
+package com.elionhaxhi.ribbit.ui;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -8,6 +8,9 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.widget.ImageView;
 
+import com.elionhaxhi.ribbit.R;
+import com.elionhaxhi.ribbit.R.id;
+import com.elionhaxhi.ribbit.R.layout;
 import com.squareup.picasso.Picasso;
 
 public class ViewImageActivity extends Activity {

@@ -23,7 +23,7 @@
         android:label="@string/app_name"
         android:theme="@style/Theme.Ribbit" >
         <activity
-            android:name=".MainActivity"
+            android:name="com.elionhaxhi.ribbit.ui.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -33,42 +33,43 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name="com.elionhaxhi.ribbit.ui.LoginActivity"
             android:label="@string/title_activity_login"
             android:screenOrientation="portrait" >
         </activity>
+        
         <activity
-            android:name=".SignUpActivity"
+            android:name="com.elionhaxhi.ribbit.ui.SignUpActivity"
             android:label="@string/title_activity_sign_up"
-            android:parentActivityName=".LoginActivity"
+            android:parentActivityName="com.elionhaxhi.ribbit.ui.LoginActivity"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".EditFriendsActivity"
+            android:name="com.elionhaxhi.ribbit.ui.EditFriendsActivity"
             android:label="@string/title_activity_edit_friends"
-            android:parentActivityName=".MainActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:parentActivityName=".MainActivity"
-                android:screenOrientation="portrait"
-                android:value="com.elionhaxhi.ribbit.MainActivity" />
-        </activity>
-        <activity
-            android:name=".RecipientsActivity"
-            android:label="@string/title_activity_reciptient"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName="com.elionhaxhi.ribbit.ui.MainActivity" 
             android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.elionhaxhi.ribbit.MainActivity" />
+                android:value="com.elionhaxhi.ribbit.ui.MainActivity" />
         </activity>
         <activity
-            android:name=".ViewImageActivity"
-            android:label="@string/title_activity_view_image"
-            android:parentActivityName=".MainActivity" android:screenOrientation="portrait">
+            android:name="com.elionhaxhi.ribbit.ui.RecipientsActivity"
+      		android:label="@string/title_activity_reciptient"
+            android:parentActivityName="com.elionhaxhi.ribbit.ui.MainActivity"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.elionhaxhi.ribbit.MainActivity" />
+                android:value="com.elionhaxhi.ribbit.ui.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.elionhaxhi.ribbit.ui.ViewImageActivity"
+            android:label="@string/title_activity_view_image"
+            android:parentActivityName="com.elionhaxhi.ribbit.ui.MainActivity" 
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.elionhaxhi.ribbit.ui.MainActivity" />
         </activity>
     </application>
 

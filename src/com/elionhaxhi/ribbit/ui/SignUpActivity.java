@@ -1,4 +1,4 @@
-package com.elionhaxhi.ribbit;
+package com.elionhaxhi.ribbit.ui;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -10,6 +10,10 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.elionhaxhi.ribbit.R;
+import com.elionhaxhi.ribbit.R.id;
+import com.elionhaxhi.ribbit.R.layout;
+import com.elionhaxhi.ribbit.R.string;
 import com.parse.ParseException;
 import com.parse.ParseUser;
 import com.parse.SignUpCallback;

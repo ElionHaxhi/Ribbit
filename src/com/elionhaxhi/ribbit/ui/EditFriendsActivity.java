@@ -1,4 +1,4 @@
-package com.elionhaxhi.ribbit;
+package com.elionhaxhi.ribbit.ui;
 
 import java.util.List;
 
@@ -13,6 +13,10 @@ import android.view.Window;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.elionhaxhi.ribbit.R;
+import com.elionhaxhi.ribbit.R.layout;
+import com.elionhaxhi.ribbit.R.string;
+import com.elionhaxhi.ribbit.utils.ParseConstants;
 import com.parse.FindCallback;
 import com.parse.ParseException;
 import com.parse.ParseQuery;

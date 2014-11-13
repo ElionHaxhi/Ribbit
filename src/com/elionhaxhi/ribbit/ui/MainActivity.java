@@ -1,4 +1,4 @@
-package com.elionhaxhi.ribbit;
+package com.elionhaxhi.ribbit.ui;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -7,6 +7,7 @@ import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
+
 import android.app.ActionBar;
 import android.app.AlertDialog;
 import android.app.FragmentTransaction;
@@ -24,6 +25,15 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.Window;
 import android.widget.Toast;
+
+import com.elionhaxhi.ribbit.R;
+import com.elionhaxhi.ribbit.R.array;
+import com.elionhaxhi.ribbit.R.id;
+import com.elionhaxhi.ribbit.R.layout;
+import com.elionhaxhi.ribbit.R.menu;
+import com.elionhaxhi.ribbit.R.string;
+import com.elionhaxhi.ribbit.adapters.SectionsPagerAdapter;
+import com.elionhaxhi.ribbit.utils.ParseConstants;
 import com.parse.ParseUser;
 
 

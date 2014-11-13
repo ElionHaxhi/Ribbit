@@ -1,4 +1,4 @@
-package com.elionhaxhi.ribbit;
+package com.elionhaxhi.ribbit.utils;
 
 import java.io.ByteArrayOutputStream;
 

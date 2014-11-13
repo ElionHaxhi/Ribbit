@@ -1,6 +1,13 @@
-package com.elionhaxhi.ribbit;
+package com.elionhaxhi.ribbit.adapters;
 
 import java.util.Locale;
+
+import com.elionhaxhi.ribbit.R;
+import com.elionhaxhi.ribbit.R.drawable;
+import com.elionhaxhi.ribbit.R.string;
+import com.elionhaxhi.ribbit.ui.FriendsFragment;
+import com.elionhaxhi.ribbit.ui.InboxFragment;
+
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
