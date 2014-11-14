@@ -50,7 +50,7 @@ public class RecipientsActivity extends ListActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
-		setContentView(R.layout.activity_reciptient);
+		setContentView(R.layout.user_grid);
 		
 		//setupActionBar();
 		getListView().setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
