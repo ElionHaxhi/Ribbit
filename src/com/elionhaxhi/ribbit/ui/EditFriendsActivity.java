@@ -8,9 +8,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
-import android.widget.ArrayAdapter;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
-import android.widget.ListView;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.elionhaxhi.ribbit.R;
@@ -38,7 +39,7 @@ public class EditFriendsActivity extends Activity {
 		setContentView(R.layout.user_grid);
 		mGridView = (GridView)findViewById(R.id.friendsGrid);
 		mGridView.setChoiceMode(GridView.CHOICE_MODE_MULTIPLE);
-		//mGridView.setOnItemClickListener(listener);
+		mGridView.setOnItemClickListener(mOnItemClickListener);
 		
 	     TextView emptyTextView = (TextView)findViewById(android.R.id.empty);
          mGridView.setEmptyView(emptyTextView);
@@ -152,4 +153,70 @@ public class EditFriendsActivity extends Activity {
 		});
 	}
 	
+	protected OnItemClickListener mOnItemClickListener = new OnItemClickListener(){
+
+		@Override
+		public void onItemClick(AdapterView<?> parent, View view, int position,
+				long id) {
+			ImageView checkImageView = (ImageView)view.findViewById(R.id.checkImageView);
+			
+			
+			if(mGridView.isItemChecked(position)){
+				//add user
+				mFriendsRelation.add(mUsers.get(position));
+				checkImageView.setVisibility(View.VISIBLE);
+			
+			}
+			else{
+				//remove friends
+				mFriendsRelation.remove(mUsers.get(position));
+				checkImageView.setVisibility(View.INVISIBLE);
+			}
+			mCurrentUser.saveInBackground(new SaveCallback(){
+				@Override
+				public void done(ParseException e){
+					if(e != null){
+						Log.e(TAG, e.getMessage());
+					}
+				}
+			});	
+			
+			
+		}
+		
+	};
+	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

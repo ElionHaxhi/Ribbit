@@ -17,6 +17,7 @@ import com.elionhaxhi.ribbit.R;
 import com.elionhaxhi.ribbit.R.id;
 import com.elionhaxhi.ribbit.R.layout;
 import com.elionhaxhi.ribbit.R.string;
+import com.elionhaxhi.ribbit.RibbitApplication;
 import com.parse.LogInCallback;
 import com.parse.ParseException;
 import com.parse.ParseUser;
@@ -85,6 +86,9 @@ public class LoginActivity extends Activity {
 
 							if(e==null){
 								//Success!
+								
+								RibbitApplication.updateParseIntallation(user);
+								
 								Intent intent = new Intent(LoginActivity.this,MainActivity.class);
 								intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 								intent.addFlags(intent.FLAG_ACTIVITY_CLEAR_TASK);

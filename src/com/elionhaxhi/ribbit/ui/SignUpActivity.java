@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.elionhaxhi.ribbit.R;
+import com.elionhaxhi.ribbit.RibbitApplication;
 import com.elionhaxhi.ribbit.R.id;
 import com.elionhaxhi.ribbit.R.layout;
 import com.elionhaxhi.ribbit.R.string;
@@ -86,6 +87,8 @@ public class SignUpActivity extends Activity {
 							setProgressBarIndeterminateVisibility(false);
 							if(e==null){
 								//success!
+								RibbitApplication.updateParseIntallation(ParseUser.getCurrentUser());
+								
 								Intent intent = new Intent(SignUpActivity.this,MainActivity.class);
 								intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 								intent.addFlags(intent.FLAG_ACTIVITY_CLEAR_TASK);
